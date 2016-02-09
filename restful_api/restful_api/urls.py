@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from rest_api_beta import views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+	url(r'^users/$', views.users_list),
+	url(r'^urgences/$', views.urgences_list),
+	url(r'^user/(?P<pk>[0-9]+)$', views.user_infos),
 ]

@@ -4,4 +4,4 @@ from django.apps import AppConfig
 
 
 class BlogConfig(AppConfig):
-    name = 'blog'
+    name = 'rest_api_beta'
